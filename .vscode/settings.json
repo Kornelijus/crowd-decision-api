@@ -1,0 +1,12 @@
+{   
+    // Enable linting:
+    "python.linting.enabled": true,
+    "python.linting.pylintEnabled": true,
+    
+    // To reduce clutter, don't display these files in the sidebar:
+    "files.exclude": {
+        "**/__pycache__": true,
+        "poetry.lock": true,
+        "crowd_decision/*/__init__.py": true
+    }
+}

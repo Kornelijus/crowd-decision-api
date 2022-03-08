@@ -10,6 +10,7 @@ python = '^3.10'
 SQLAlchemy = '^1.4.32'
 psycopg2 = '^2.9.3'
 fastapi = {extras = ['all'], version = '^0.75.0'}
+sqlmodel = "^0.0.6"
 
 [tool.poetry.dev-dependencies]
 black = '^22.1.0'

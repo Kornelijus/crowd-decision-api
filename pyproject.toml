@@ -1,31 +1,35 @@
 [tool.poetry]
-name = "crowd-decision-api"
-version = "0.1.0"
-description = ""
-authors = ["Kornelijus Tvarijanavičius <kornelijus@tvaria.com>"]
-license = "AGPL-3.0-or-later"
+name = 'crowd-decision'
+version = '0.1.0'
+description = ''
+authors = ['Kornelijus Tvarijanavičius <kornelijus@tvaria.com>']
+license = 'AGPL-3.0-or-later'
 
 [tool.poetry.dependencies]
-python = "^3.10"
-SQLAlchemy = "^1.4.32"
-psycopg2 = "^2.9.3"
-fastapi = {extras = ["all"], version = "^0.75.0"}
+python = '^3.10'
+SQLAlchemy = '^1.4.32'
+psycopg2 = '^2.9.3'
+fastapi = {extras = ['all'], version = '^0.75.0'}
 
 [tool.poetry.dev-dependencies]
-black = "^22.1.0"
-pytest = "^7.0.1"
-pytest-cov = "^3.0.0"
-pre-commit = "^2.17.0"
-pylint = "^2.12.2"
+black = '^22.1.0'
+pytest = '^7.0.1'
+pytest-cov = '^3.0.0'
+pre-commit = '^2.17.0'
+pylint = '^2.12.2'
 
 [build-system]
-requires = ["poetry-core>=1.0.0"]
-build-backend = "poetry.core.masonry.api"
+requires = ['poetry-core>=1.0.0']
+build-backend = 'poetry.core.masonry.api'
 
 [tool.black]
 line-length = 120
-target-version = ["py310"]
+target-version = ['py310']
 include = '.pyi?$'
 
 [tool.pylint.messages_control]
 max-line-length = 120
+
+disable = [
+    'missing-docstring'
+]

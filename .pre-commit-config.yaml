@@ -14,7 +14,7 @@ repos:
         types: [python]
         args:
           [
-            "-rn", # Only display messages
-            "-sn", # Don't display the score
-            "--rcfile=pyproject.toml", # Link to config file
+            '-rn', # Only display messages
+            '-sn', # Don't display the score
+            '--rcfile=pyproject.toml', # Link to config file
           ]

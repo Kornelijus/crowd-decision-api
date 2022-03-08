@@ -1,0 +1,26 @@
+version: '3'
+
+services:
+  db:
+    image: postgres:alpine
+    container_name: crowd-decision-db
+    restart: unless-stopped
+    environment:
+      POSTGRES_PASSWORD: very_secure_password
+  
+  api:
+    build: .
+    container_name: crowd-decision-api
+    restart: unless-stopped
+    ports:
+      - 8888:8888
+
+# nginx:
+#   image: nginx:alpine
+#   container_name: crowd-decision-nginx
+#   restart: unless-stopped
+#   environment:
+#     NGINX_HOST: localhost
+#     NGINX_PORT: 8888
+#   ports:
+#     8888:8888

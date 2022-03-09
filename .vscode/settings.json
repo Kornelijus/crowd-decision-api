@@ -6,7 +6,19 @@
     // To reduce clutter, don't display these files in the sidebar:
     "files.exclude": {
         "**/__pycache__": true,
+        "**/.pytest_cache": true,
         "poetry.lock": true,
-        "crowd_decision/*/__init__.py": true
+        "crowd_decision/*/__init__.py": true,
+        "tests/__init__.py": true,
+    },
+
+    // Copilot go brrr
+    "github.copilot.enable": {
+        "python": true,
+        "yaml": true,
+        "json": false,
+        "toml": false,
+        "plaintext": false,
+        "markdown": false
     }
 }

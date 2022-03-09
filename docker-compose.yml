@@ -8,12 +8,12 @@ services:
     environment:
       POSTGRES_PASSWORD: very_secure_password
   
-  api:
-    build: .
-    container_name: crowd-decision-api
-    restart: unless-stopped
-    ports:
-      - 8888:8888
+  # api:
+  #   build: .
+  #   container_name: crowd-decision-api
+  #   restart: unless-stopped
+  #   ports:
+  #     - 8888:8888
 
 # nginx:
 #   image: nginx:alpine
